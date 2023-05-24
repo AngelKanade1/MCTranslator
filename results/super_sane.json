@@ -1,0 +1,59 @@
+{
+  "cooldown": 200,
+  "description": "耐你进入一个状态,让你的任何类型的伤害你伤害2 x,但是在你使用这个能力迟钝,虚弱和饥饿10秒钟。",
+  "entity_action": {
+    "actions": [
+      {
+        "command": "effect give @s minecraft:resistance 10 20 false",
+        "permission_level": 4,
+        "type": "origins:execute_command"
+      },
+      {
+        "command": "effect give @s minecraft:strength 10 2 false",
+        "permission_level": 4,
+        "type": "origins:execute_command"
+      },
+      {
+        "action": {
+          "command": "effect clear @s",
+          "type": "origins:execute_command"
+        },
+        "ticks": 220,
+        "type": "origins:delay"
+      },
+      {
+        "action": {
+          "command": "effect give @s slowness 10 1 false",
+          "type": "origins:execute_command"
+        },
+        "ticks": 221,
+        "type": "origins:delay"
+      },
+      {
+        "action": {
+          "command": "effect give @s weakness 10 0 false",
+          "type": "origins:execute_command"
+        },
+        "ticks": 221,
+        "type": "origins:delay"
+      },
+      {
+        "action": {
+          "command": "effect give @s hunger 10 0 false",
+          "type": "origins:execute_command"
+        },
+        "ticks": 221,
+        "type": "origins:delay"
+      }
+    ],
+    "type": "origins:and"
+  },
+  "hud_render": {
+    "bar_index": 1,
+    "should_render": true,
+    "sprite_location": "origins:textures/gui/community/spiderkolo/resource_bar_01.png"
+  },
+  "key": "key.origins.secondary_active",
+  "name": "超级理智的",
+  "type": "origins:active_self"
+}

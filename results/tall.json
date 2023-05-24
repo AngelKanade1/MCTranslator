@@ -1,0 +1,28 @@
+{
+  "condition": {
+    "offset_x": 0,
+    "offset_y": 1,
+    "offset_z": 0,
+    "type": "origins:block_collision"
+  },
+  "description": "你习惯于高屋顶下当你是正确的在一块你会虚弱和饥饿。",
+  "duration_per_stack": 10,
+  "effects": [
+    {
+      "effect": "minecraft:weakness",
+      "is_ambient": true,
+      "show_icon": true,
+      "show_particles": false
+    },
+    {
+      "effect": "minecraft:hunger",
+      "is_ambient": true,
+      "show_icon": true,
+      "show_particles": false
+    }
+  ],
+  "max_stacks": 361,
+  "min_stacks": -20,
+  "name": "高",
+  "type": "origins:stacking_status_effect"
+}

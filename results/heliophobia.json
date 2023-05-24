@@ -1,0 +1,31 @@
+{
+  "condition": {
+    "block_condition": {
+      "compare_to": 13,
+      "comparison": ">=",
+      "type": "origins:light_level"
+    },
+    "type": "origins:in_block"
+  },
+  "description": "当在严酷的照明条件,得到失明和缓慢2秒。",
+  "entity_action": {
+    "effects": [
+      {
+        "duration": 40,
+        "effect": "minecraft:blindness",
+        "show_icon": false,
+        "show_particles": false
+      },
+      {
+        "duration": 40,
+        "effect": "minecraft:slowness",
+        "show_icon": false,
+        "show_particles": false
+      }
+    ],
+    "type": "origins:apply_effect"
+  },
+  "interval": 20,
+  "name": "日光恐怖",
+  "type": "origins:action_over_time"
+}

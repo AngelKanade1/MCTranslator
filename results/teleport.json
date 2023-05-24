@@ -1,0 +1,16 @@
+{
+  "cooldown": 200,
+  "description": "你可以传送远在瞬间只要你寻找你想要的方向。",
+  "divergence": 1,
+  "entity_type": "origins:enderian_pearl",
+  "hud_render": {
+    "bar_index": 6,
+    "should_render": false,
+    "sprite_location": "origins:textures/gui/resource_bar.png"
+  },
+  "key": "key.origins.primary_active",
+  "name": "传送",
+  "sound": "minecraft:entity.ender_pearl.throw",
+  "speed": 1.5,
+  "type": "origins:fire_projectile"
+}

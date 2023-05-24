@@ -1,0 +1,63 @@
+{
+  "condition": {
+    "conditions": [
+      {
+        "equipment_slot": "head",
+        "item_condition": {
+          "ingredient": {
+            "item": "minecraft:netherite_helmet"
+          },
+          "type": "origins:ingredient"
+        },
+        "type": "origins:equipped_item"
+      },
+      {
+        "equipment_slot": "chest",
+        "item_condition": {
+          "ingredient": {
+            "item": "minecraft:netherite_chestplate"
+          },
+          "type": "origins:ingredient"
+        },
+        "type": "origins:equipped_item"
+      },
+      {
+        "equipment_slot": "legs",
+        "item_condition": {
+          "ingredient": {
+            "item": "minecraft:netherite_leggings"
+          },
+          "type": "origins:ingredient"
+        },
+        "type": "origins:equipped_item"
+      },
+      {
+        "equipment_slot": "feet",
+        "item_condition": {
+          "ingredient": {
+            "item": "minecraft:netherite_boots"
+          },
+          "type": "origins:ingredient"
+        },
+        "type": "origins:equipped_item"
+      }
+    ],
+    "type": "origins:and"
+  },
+  "description": "因为你的手臂是弱你不能穿netherite正确得到缓慢二世与netherite盔甲。",
+  "duration_per_stack": 20,
+  "effects": [
+    {
+      "amplifier": 1,
+      "duration": 100,
+      "effect": "minecraft:slowness",
+      "is_ambient": true,
+      "show_icon": false,
+      "show_particles": false
+    }
+  ],
+  "max_stacks": 10,
+  "min_stacks": 0,
+  "name": "弱势的地位",
+  "type": "origins:stacking_status_effect"
+}

@@ -1,0 +1,89 @@
+{
+  "aizawa_team_joining": {
+    "entity_action_chosen": {
+      "actions": [
+        {
+          "command": "team add aizawa",
+          "permission_level": 4,
+          "type": "origins:execute_command"
+        },
+        {
+          "command": "team join aizawa @s",
+          "permission_level": 4,
+          "type": "origins:execute_command"
+        }
+      ],
+      "type": "origins:and"
+    },
+    "entity_action_lost": {
+      "command": "team leave @s",
+      "permission_level": 4,
+      "type": "origins:execute_command"
+    },
+    "type": "origins:action_on_callback"
+  },
+  "aizawa_team_managing": {
+    "entity_action": {
+      "actions": [
+        {
+          "command": "team leave @e[tag=angry]",
+          "permission_level": 4,
+          "type": "origins:execute_command"
+        },
+        {
+          "command": "team join aizawa @e[type=minecraft:zombie,tag=!angry]",
+          "permission_level": 4,
+          "type": "origins:execute_command"
+        },
+        {
+          "command": "team join aizawa @e[type=minecraft:skeleton,tag=!angry]",
+          "permission_level": 4,
+          "type": "origins:execute_command"
+        },
+        {
+          "command": "team join aizawa @e[type=minecraft:husk,tag=!angry]",
+          "permission_level": 4,
+          "type": "origins:execute_command"
+        },
+        {
+          "command": "team join aizawa @e[type=minecraft:drowned,tag=!angry]",
+          "permission_level": 4,
+          "type": "origins:execute_command"
+        },
+        {
+          "command": "team join aizawa @e[type=minecraft:stray,tag=!angry]",
+          "permission_level": 4,
+          "type": "origins:execute_command"
+        },
+        {
+          "command": "team join aizawa @e[type=minecraft:spider,tag=!angry]",
+          "permission_level": 4,
+          "type": "origins:execute_command"
+        },
+        {
+          "command": "team join aizawa @e[type=minecraft:creeper,tag=!angry]",
+          "permission_level": 4,
+          "type": "origins:execute_command"
+        }
+      ],
+      "type": "origins:and"
+    },
+    "interval": 20,
+    "type": "origins:action_over_time"
+  },
+  "description": "因为你对每个人都很好;",
+  "hostility_when_hit": {
+    "cooldown": 0,
+    "entity_action": {
+      "command": "tag @s[team=aizawa,type=!minecraft:player] add angry",
+      "permission_level": 4,
+      "type": "origins:execute_command"
+    },
+    "hud_render": {
+      "should_render": false
+    },
+    "type": "origins:target_action_on_hit"
+  },
+  "name": "很好",
+  "type": "origins:multiple"
+}

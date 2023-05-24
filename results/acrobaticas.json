@@ -1,0 +1,26 @@
+{
+  "description": "你速度慢,你也落在地上。",
+  "duration_per_stack": 20,
+  "effects": [
+    {
+      "amplifier": 0,
+      "duration": 100,
+      "effect": "minecraft:slow_falling",
+      "is_ambient": true,
+      "show_icon": false,
+      "show_particles": false
+    },
+    {
+      "amplifier": 0,
+      "duration": 100,
+      "effect": "minecraft:speed",
+      "is_ambient": true,
+      "show_icon": false,
+      "show_particles": false
+    }
+  ],
+  "max_stacks": 10,
+  "min_stacks": 0,
+  "name": "Acrobaticas",
+  "type": "origins:stacking_status_effect"
+}

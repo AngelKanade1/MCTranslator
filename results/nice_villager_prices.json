@@ -1,0 +1,17 @@
+{
+  "duration_per_stack": 20,
+  "effects": [
+    {
+      "amplifier": 0,
+      "duration": 100,
+      "effect": "minecraft:hero_of_the_village",
+      "is_ambient": true,
+      "show_icon": false,
+      "show_particles": false
+    }
+  ],
+  "hidden": true,
+  "max_stacks": 10,
+  "min_stacks": 0,
+  "type": "origins:stacking_status_effect"
+}

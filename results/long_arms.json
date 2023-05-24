@@ -1,0 +1,21 @@
+{
+  "description": "你达到增加。",
+  "entity_action_chosen": {
+    "command": "scale set pehkui:reach 2.25 @s",
+    "permission_level": 4,
+    "type": "origins:execute_command"
+  },
+  "entity_action_lost": {
+    "command": "scale set pehkui:reach 2.25 @s",
+    "permission_level": 4,
+    "type": "origins:execute_command"
+  },
+  "entity_action_respawned": {
+    "command": "scale set pehkui:reach 2.25 @s",
+    "permission_level": 4,
+    "type": "origins:execute_command"
+  },
+  "execute_chosen_when_orb": true,
+  "name": "长臂",
+  "type": "origins:action_on_callback"
+}
